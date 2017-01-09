@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Baby Bets</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/new.css') }}" rel="stylesheet">
+
+    <!-- <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet"> -->
+    <link href="{{ url_for('static', filename='css/bootstrap-datetimepicker.css') }}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">{{baby_name}} Arrival Bets</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/a">Admin</a></li>
+            <li><a href="/a/kb">Turn off betting</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+
+
+    <div class="container" id="mc">
+      {% if msg %}
+      <div class="alert alert-danger fs">
+        {{msg}}
+      </div>
+      {% endif %}
+
+      <div class="row">
+      <form method="post" action="/a/kb">
+        <input type="hidden" name="kb" value="n">
+        <input class="btn btn-danger" type="submit" name="submit" value="Yes">
+      </form>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; {{baby_name}} bets 2016</p>
+      </footer>
+    </div>
+    
+  </body>
+</html>
+        

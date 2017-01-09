@@ -1,0 +1,136 @@
+body {
+    /*background: url('../img/noise.png');*/
+    padding-top: 75px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.stat-btn {
+    color: #666;
+    display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3333333;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.pink {
+    background: #ffd1dc;
+    border-color: #dea5a5;
+}
+
+.blue {
+    background: #aec6cf;
+    border-color: #779ecb;
+}
+
+.yo {
+    border-color: #77dd77;
+}
+
+.pan-cir {
+    background: #eee;
+    padding: 50px 100px;
+    border-radius: 75px;
+}
+
+.panel-shadow {
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+}
+
+.panel-pink {
+    background: rgba(255,209,220,0.5);
+    border: 1px solid transparent;
+    border-color: #dea5a5;
+    color: #777;
+}
+
+.panel-blue {
+    background: rgba(174,198,207,0.5);
+    border: 1px solid transparent;
+    border-color: #779ecb;
+    color: #777;
+}
+
+.post .post-heading {
+    padding: 20px 15px;
+}
+
+.post .post-heading .meta .title {
+    margin-bottom: 0;
+}
+
+.post .post-description {
+    padding: 15px;
+}
+
+.post .post-description p {
+    font-size: 14px;
+}
+
+
+.post .post-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+}
+
+.post .post-footer .input-group-addon a {
+    color: #454545;
+}
+
+.post .post-footer .comments-list {
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.post .post-footer .comments-list .comment {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.post .post-footer .comments-list .comment .comment-heading {
+    display: block;
+    width: 100%;
+}
+
+.post .post-footer .comments-list .comment .comment-heading .user {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.post .post-footer .comments-list .comment .comment-body {
+    margin-left: 50px;
+}
+
+.post .post-footer .comments-list .comment > .comments-list {
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 15px;
+    }
+    .btn-submit .btn {
+        padding: 5px 20px;
+        width: 100%;
+    }
+}
